@@ -12,7 +12,7 @@ endif()
 set( NO_DEFAULT_PATH )
 if(NOT BUILD_BUFR )
   if(DEFINED ENV{BUFR_LIBd} )
-    set(BUFR_LIBRARY $ENV{BUFR_LIBd} )
+    set(BUFR_LIBRARY $ENV{BUFR_LIBd_DA} )
     message("BUFR library ${BUFR_LIBRARY} set via Environment variable")
   else()
   find_library( BUFR_LIBRARY 
